@@ -1,0 +1,215 @@
+$white: #ffffff;
+$black: #333333;
+$darkGray: #818181;
+$lightGray:#888888;
+$red: #ec5a4b;
+
+$blockWidth: 140px;
+$defaulPading: 10px;
+$solidBorder: 1px solid;
+
+$itemPading: 8px 28px;
+$lineHeightTitle: 35px;
+$lineHeightSideBar: 22px;
+$lineHeightFooter: 34px;
+
+//fonts
+$fontSizeSmall: 12px;
+$fontSizeBigger: 30px;
+$fontSizeBig: 20px;
+$fontSizeNormal: 14px;
+$fontSizeSmaller: 10px;
+
+$defaultTextShadow: 0 1px 0 white;
+
+
+.workspace__container {
+  background: $white;
+}
+
+.workspace__header {
+  background: $white;
+  padding: 0;
+  border-bottom: $solidBorder $lightGray;
+  position: relative;
+  height: $lineHeightTitle;
+}
+
+.workspace__header__title {
+  color: $red;
+  font-weight: bold;
+  font-size: $lineHeightTitle;
+  line-height: $lineHeightTitle;
+  width: $blockWidth;
+  float: left;
+}
+
+.workspace__header__link {
+  color: $red;
+  text-decoration: none;
+  display: block;
+}
+
+.main-menu {
+  list-style-type: none;
+  text-transform: uppercase;
+  font-size: $fontSizeSmall;
+  padding-top: 7px;
+  padding-left: 58px;
+}
+
+.main-menu__lesson {
+  color: $black;
+  display: inline-block;
+}
+
+.main-menu__link {
+  text-decoration: none;
+  cursor: pointer;
+  padding: $defaulPading/2 0 0 $defaulPading;
+  color: $black;
+
+  &:hover {
+    border-bottom: $solidBorder $red;
+  }
+}
+
+.breadcrumbs__li {
+  display: inline-block;
+
+  &:after {
+    content: "/";
+    margin: 0 $defaulPading;
+    display: inline-block;
+  }
+}
+
+.breadcrumbs__link {
+  font-weight: normal;
+  color: $darkGray;
+
+  &:hover {
+    color: $darkGray;
+  }
+}
+
+.counter-block {
+    border-bottom: $solidBorder $lightGray;
+    padding-bottom: $defaulPading;
+    margin-bottom: 1.8*$defaulPading;
+    color: $lightGray;
+    text-shadow: $defaultTextShadow;
+}
+
+.quiz-answers__item {
+    color: $red;
+    background: $white;
+    padding: $itemPading;
+    margin-bottom: 1.8*$defaulPading;
+    cursor: pointer;
+    box-sizing: border-box;
+    position: relative;
+    border: $red $solidBorder;
+
+    &:hover {
+      background: $red;
+      color: $white;
+    }
+  }
+
+.quiz-answers__item__none {
+    color: $darkGray;
+    background: $white;
+    padding: $itemPading;
+    margin-bottom: 1.8*$defaulPading;
+    cursor: pointer;
+    box-sizing: border-box;
+    position: relative;
+    border: $darkGray $solidBorder;
+
+   &:hover {
+    background: $darkGray;
+    color: $white;
+  }
+}
+
+.workspace__sidebar {
+    width: 150px;
+    float: right;
+    padding-right: 70px;
+}
+
+.workspace__sidebar__promo {
+    padding: 0;
+}
+
+.sidebar-block__counter {
+    font-weight: bold;
+    padding-bottom: $defaulPading;
+}
+
+.sidebar-block__title {
+    font-size: $fontSizeBigger;
+    color: $red;
+    text-align: center;
+    border-bottom: $solidBorder $lightGray;
+    line-height: $lineHeightTitle;
+    margin-bottom: 1.8*$defaulPading;
+    position: relative;
+    font-weight: normal;
+    padding-bottom: 8px;
+    width: $blockWidth;
+}
+
+.sidebar-block__links {
+    font-size: $fontSizeBig;
+    color: $darkGray;
+    text-align: center;
+    border-bottom: $solidBorder $lightGray;
+    line-height: $lineHeightTitle;
+    margin-bottom: 1.8*$defaulPading;
+    position: relative;
+    font-weight: normal;
+    padding-bottom: 8px;
+    width: $blockWidth;
+}
+
+.sidebar-block__share__buttons {
+    text-align: center;
+    width: $blockWidth;
+    display: inline;
+    a {
+        margin: 0 $defaulPading/2;
+        color:  $darkGray;
+        display: inline-block;
+        padding: $defaulPading/2;
+        text-shadow: $defaultTextShadow;
+    }
+}
+
+.sidebar-block__share__desc {
+    font-size: $fontSizeSmaller;
+    line-height: $lineHeightSideBar;
+    text-align: center;
+    color: $lightGray;
+    margin-bottom: 9px;
+    text-shadow: $defaultTextShadow;
+    width: $blockWidth;
+}
+
+.workspace__footer {
+    display: inline;
+    border-top: $solidBorder $lightGray;
+    color: $darkGray;
+    line-height: $lineHeightFooter;
+    font-size: $fontSizeNormal;
+    background: $white;
+}
+
+.workspace__footer__links {
+    float: right;
+}
+
+.workspace__footer__wrapper {
+    background: $white;
+}
